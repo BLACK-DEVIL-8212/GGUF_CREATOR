@@ -1,0 +1,161 @@
+Conversation                    x
+ShortReplies                    x
+Fallback                        x
+NoiseHandling                   x
+Slang                           x
+MultiTurn                       x
+ContextCarry                    x
+Clarification                   x
+ToolConsistency                 x
+IntentMapping                   x
+FastDecision                    x
+EdgeCases                       x
+Ambiguity                       x
+ErrorHandling                   x
+RetryLogic                      x
+NaturalTone                     x
+StructuredMix                   x
+Confidence                      x
+Uncertainty                     x
+Refusal                         x
+Safety                          x
+Robustness                      x    
+Planning                        x
+Execution                       x
+Evaluation                      x
+Simulation                      x
+Debugging                       x
+Logs                            x
+Commands                        x
+Automation                      x
+RealWorldTasks                  x
+Variations                      x
+Paraphrasing                    x
+Synonyms                        x
+Typos                           x
+IncompleteInput                 x
+RepetitionControl               x
+Conciseness                     x
+Expansion                       x
+Summarization                   x
+Compression                     x
+MemoryUse                       x
+Retrieval                       x
+KnowledgeUse                    x
+ReasoningDepth                  x
+SpeedMode                       x
+Precision                       x
+Determinism                     x
+SelfAwareness                   x
+MetaReasoning                   x
+Reflection                      x
+SelfCorrection                  x
+LongTermMemory                  x
+WorkingMemory                   x
+GoalPersistence                 x
+GoalAdaptation                  x
+Autonomy                        x
+DecisionMaking                  x
+Prioritization                  x
+Tradeoffs                       x
+Causality                       x
+TemporalReasoning               x
+WorldModel                      x
+SimulationDepth                 x
+PlanningDepth                   x
+HierarchicalPlanning            x
+MultiStepExecution              x
+FeedbackLoop                    x
+LearningFromFeedback            x
+ContinualLearning               x
+Generalization                  x
+TransferLearning                x
+Abstraction                     x
+ConceptFormation                x
+UncertaintyQuantification       x
+RiskAssessment                  x
+ErrorRecovery                   x
+RobustDecision                  x
+MultiModalReasoning             x
+VisionUnderstanding             x
+AudioUnderstanding              x
+EnvironmentAwareness            x 
+ToolChaining                    x
+ToolSelection                   x
+DynamicToolUse                  x
+StrategySelection               x
+StrategySwitching               x
+ResourceOptimization            x
+LatencyAwareness                x
+EnergyEfficiency                x
+Scalability                     x
+Coordination                    x
+MultiAgentReasoning             x
+SocialUnderstanding             x
+EmotionUnderstanding            x
+IntentPrediction                x
+BehaviorPrediction              x
+Negotiation                     x
+Persuasion                      x
+Creativity                      x
+Innovation                      x
+Exploration                     x
+Curiosity                       x
+SelfImprovement                 x
+ValueAlignment                  x
+GoalAlignment                   x
+Constraints                     x
+Ethics                          x
+Explainability                  x
+Interpretability                x
+Traceability                    x
+Justification                   x
+Verification                    x
+Validation                      x
+ConsistencyCheck                x
+FactChecking                    x
+Consistency                     x
+Coherence                       x
+Stability                       x  
+Attention                       x
+Focus                           x
+LoadBalancing                   x
+TaskSwitching                   x
+Decomposition                   x
+SubGoals                        x
+ConflictResolution              x
+GoalVerification                x
+Monitoring                      x
+Tracking                        x
+AnomalyDetection                x
+HealthCheck                     x
+UserModeling                    x
+Preferences                     x
+Adaptation                      x
+Personalization
+Lifecycle
+ExecutionTracking
+InterruptHandling
+Resume
+Grounding
+Validation
+SensorFusion
+Simulation
+Orchestration
+Integration
+Synchronization
+Pipelines
+Security
+ThreatDetection
+AccessControl
+Privacy
+Robustness
+LearningRate
+Pruning
+MemoryOptimization
+Personality
+Tone
+Identity
+Performance
+Cost
+Quality
