@@ -1,5 +1,6 @@
 import os
 import shutil
+import gc
 import torch
 
 from transformers import (
@@ -26,13 +27,12 @@ OUTPUT_PATH = "models/EDIATH-merged"
 if os.path.exists(OUTPUT_PATH):
 
     print("⚠️ Removing old merged model...")
-
     shutil.rmtree(OUTPUT_PATH)
 
 os.makedirs(OUTPUT_PATH, exist_ok=True)
 
 # =========================================================
-# DEVICE
+# SETTINGS
 # =========================================================
 
 device = "cpu"
@@ -40,7 +40,7 @@ device = "cpu"
 dtype = torch.float16
 
 print("🚀 LOW RAM MERGE MODE")
-print("=" * 50)
+print("=" * 60)
 
 # =========================================================
 # VALIDATION
@@ -65,10 +65,12 @@ if not os.path.exists(adapter_file):
     )
 
 # =========================================================
-# MEMORY SETTINGS
+# MEMORY OPTIMIZATION
 # =========================================================
 
 torch.set_grad_enabled(False)
+
+gc.collect()
 
 if torch.cuda.is_available():
     torch.cuda.empty_cache()
@@ -89,9 +91,7 @@ try:
 
         low_cpu_mem_usage=True,
 
-        device_map={
-            "": "cpu"
-        },
+        device_map="cpu",
 
         trust_remote_code=True
     )
@@ -101,7 +101,6 @@ try:
 except Exception as e:
 
     print(f"❌ Failed loading base model:\n{e}")
-
     exit(1)
 
 # =========================================================
@@ -113,16 +112,26 @@ print("📥 Loading tokenizer...")
 try:
 
     tokenizer = AutoTokenizer.from_pretrained(
+
         BASE_MODEL,
+
+        use_fast=False,   # IMPORTANT FIX
+
         trust_remote_code=True
     )
+
+    # optional safety
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
 
     print("✅ Tokenizer loaded")
 
 except Exception as e:
 
     print(f"❌ Tokenizer load failed:\n{e}")
-
+    print("\n⚠️ FIX:")
+    print("Run:")
+    print("pip install -U transformers tokenizers sentencepiece")
     exit(1)
 
 # =========================================================
@@ -139,9 +148,7 @@ try:
 
         LORA_PATH,
 
-        device_map={
-            "": "cpu"
-        },
+        device_map="cpu",
 
         torch_dtype=dtype
     )
@@ -151,11 +158,10 @@ try:
 except Exception as e:
 
     print(f"❌ Failed loading LoRA:\n{e}")
-
     exit(1)
 
 # =========================================================
-# MERGE LORA
+# MERGE
 # =========================================================
 
 print("🔀 Merging LoRA into base model...")
@@ -169,11 +175,10 @@ try:
 except Exception as e:
 
     print(f"❌ Merge failed:\n{e}")
-
     exit(1)
 
 # =========================================================
-# SAVE MERGED MODEL
+# SAVE MODEL
 # =========================================================
 
 print("💾 Saving merged model...")
@@ -186,7 +191,7 @@ try:
 
         safe_serialization=True,
 
-        max_shard_size="500MB"
+        max_shard_size="2GB"
     )
 
     print("✅ Merged model saved")
@@ -194,7 +199,6 @@ try:
 except Exception as e:
 
     print(f"❌ Save failed:\n{e}")
-
     exit(1)
 
 # =========================================================
@@ -212,7 +216,6 @@ try:
 except Exception as e:
 
     print(f"❌ Tokenizer save failed:\n{e}")
-
     exit(1)
 
 # =========================================================
@@ -223,7 +226,7 @@ print("🔎 Verifying saved files...")
 
 required_files = [
     "config.json",
-    "tokenizer_config.json"
+    "tokenizer_config.json",
 ]
 
 missing_files = []
@@ -235,7 +238,7 @@ for file in required_files:
     if not os.path.exists(path):
         missing_files.append(file)
 
-if len(missing_files) > 0:
+if missing_files:
 
     print("❌ Missing files:")
 
@@ -254,6 +257,8 @@ del model
 del merged_model
 del base_model
 
+gc.collect()
+
 if torch.cuda.is_available():
     torch.cuda.empty_cache()
 
@@ -261,18 +266,15 @@ if torch.cuda.is_available():
 # DONE
 # =========================================================
 
-print("=" * 50)
+print("=" * 60)
 
 print("🎉 MERGE COMPLETED SUCCESSFULLY")
 
 print(f"📁 Output Path: {OUTPUT_PATH}")
 
-print("=" * 50)
+print("=" * 60)
 
 print("📌 NEXT STEP")
+print("Convert merged model to GGUF using llama.cpp")
 
-print(
-    "Convert merged model to GGUF using llama.cpp"
-)
-
-print("=" * 50)
+print("=" * 60)
