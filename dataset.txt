@@ -1,161 +1,229 @@
-Conversation                    x
-ShortReplies                    x
-Fallback                        x
-NoiseHandling                   x
-Slang                           x
-MultiTurn                       x
-ContextCarry                    x
-Clarification                   x
-ToolConsistency                 x
-IntentMapping                   x
-FastDecision                    x
-EdgeCases                       x
-Ambiguity                       x
-ErrorHandling                   x
-RetryLogic                      x
-NaturalTone                     x
-StructuredMix                   x
-Confidence                      x
-Uncertainty                     x
-Refusal                         x
-Safety                          x
-Robustness                      x    
-Planning                        x
-Execution                       x
-Evaluation                      x
-Simulation                      x
-Debugging                       x
-Logs                            x
-Commands                        x
-Automation                      x
-RealWorldTasks                  x
-Variations                      x
-Paraphrasing                    x
-Synonyms                        x
-Typos                           x
-IncompleteInput                 x
-RepetitionControl               x
-Conciseness                     x
-Expansion                       x
-Summarization                   x
-Compression                     x
-MemoryUse                       x
-Retrieval                       x
-KnowledgeUse                    x
-ReasoningDepth                  x
-SpeedMode                       x
-Precision                       x
-Determinism                     x
-SelfAwareness                   x
-MetaReasoning                   x
-Reflection                      x
-SelfCorrection                  x
-LongTermMemory                  x
-WorkingMemory                   x
-GoalPersistence                 x
-GoalAdaptation                  x
-Autonomy                        x
-DecisionMaking                  x
-Prioritization                  x
-Tradeoffs                       x
-Causality                       x
-TemporalReasoning               x
-WorldModel                      x
-SimulationDepth                 x
-PlanningDepth                   x
-HierarchicalPlanning            x
-MultiStepExecution              x
-FeedbackLoop                    x
-LearningFromFeedback            x
-ContinualLearning               x
-Generalization                  x
-TransferLearning                x
-Abstraction                     x
-ConceptFormation                x
-UncertaintyQuantification       x
-RiskAssessment                  x
-ErrorRecovery                   x
-RobustDecision                  x
-MultiModalReasoning             x
-VisionUnderstanding             x
-AudioUnderstanding              x
-EnvironmentAwareness            x 
-ToolChaining                    x
-ToolSelection                   x
-DynamicToolUse                  x
-StrategySelection               x
-StrategySwitching               x
-ResourceOptimization            x
-LatencyAwareness                x
-EnergyEfficiency                x
-Scalability                     x
-Coordination                    x
-MultiAgentReasoning             x
-SocialUnderstanding             x
-EmotionUnderstanding            x
-IntentPrediction                x
-BehaviorPrediction              x
-Negotiation                     x
-Persuasion                      x
-Creativity                      x
-Innovation                      x
-Exploration                     x
-Curiosity                       x
-SelfImprovement                 x
-ValueAlignment                  x
-GoalAlignment                   x
-Constraints                     x
-Ethics                          x
-Explainability                  x
-Interpretability                x
-Traceability                    x
-Justification                   x
-Verification                    x
-Validation                      x
-ConsistencyCheck                x
-FactChecking                    x
-Consistency                     x
-Coherence                       x
-Stability                       x  
-Attention                       x
-Focus                           x
-LoadBalancing                   x
-TaskSwitching                   x
-Decomposition                   x
-SubGoals                        x
-ConflictResolution              x
-GoalVerification                x
-Monitoring                      x
-Tracking                        x
-AnomalyDetection                x
-HealthCheck                     x
-UserModeling                    x
-Preferences                     x
-Adaptation                      x
-Personalization
-Lifecycle
-ExecutionTracking
-InterruptHandling
-Resume
-Grounding
-Validation
-SensorFusion
-Simulation
-Orchestration
-Integration
-Synchronization
-Pipelines
-Security
-ThreatDetection
-AccessControl
-Privacy
-Robustness
-LearningRate
-Pruning
-MemoryOptimization
-Personality
-Tone
-Identity
-Performance
-Cost
-Quality
+Agent coordination datasets
+Planner-to-executor transition datasets
+Reflection correction datasets
+Self-healing execution datasets
+Runtime recovery datasets
+Multi-agent communication datasets
+Tool chaining datasets
+Tool failure handling datasets
+Tool permission escalation datasets
+Browser automation datasets
+Shell execution datasets
+File management datasets
+Code execution validation datasets
+API orchestration datasets
+Memory retrieval datasets
+Semantic search datasets
+Vector similarity datasets
+Long-term memory recall datasets
+Episodic memory replay datasets
+Memory prioritization datasets
+Memory decay datasets
+Memory conflict resolution datasets
+Context compression datasets
+Conversation continuation datasets
+Autonomous planning datasets
+Goal decomposition datasets
+Dynamic replanning datasets
+Recursive reasoning datasets
+Multi-step reasoning datasets
+Chain validation datasets
+Reflection scoring datasets
+Self-critique datasets
+Confidence calibration datasets
+Hallucination detection datasets
+Fact-checking datasets
+Citation verification datasets
+Contradiction detection datasets
+Research synthesis datasets
+Research summarization datasets
+Web search reasoning datasets
+Source ranking datasets
+Knowledge graph datasets
+Symbolic reasoning datasets
+Logic reasoning datasets
+Math reasoning datasets
+Scientific reasoning datasets
+Programming reasoning datasets
+Debugging datasets
+Error classification datasets
+Crash recovery datasets
+Stacktrace reasoning datasets
+Runtime monitoring datasets
+Telemetry analysis datasets
+Metrics interpretation datasets
+Performance optimization datasets
+GPU optimization datasets
+CPU balancing datasets
+Distributed execution datasets
+Swarm coordination datasets
+Cluster orchestration datasets
+Queue prioritization datasets
+Workflow synchronization datasets
+Runtime checkpoint datasets
+Rollback datasets
+Autonomous scheduler datasets
+Idle behavior datasets
+Curiosity engine datasets
+Exploration/reward datasets
+Reinforcement learning datasets
+RLHF preference datasets
+Human feedback datasets
+Autonomous learning datasets
+Online learning datasets
+Knowledge refinement datasets
+Synthetic data generation datasets
+Dataset cleaning datasets
+Dataset scoring datasets
+Dataset deduplication datasets
+Fine-tuning orchestration datasets
+GGUF quantization-aware datasets
+Local LLM routing datasets
+Multi-model routing datasets
+Hybrid inference datasets
+Context window optimization datasets
+Token budgeting datasets
+Streaming response datasets
+Realtime inference datasets
+Speech-to-text datasets
+Text-to-speech datasets
+Emotion detection datasets
+Emotion-aware response datasets
+Voice activity datasets
+Wakeword datasets
+Audio noise filtering datasets
+Vision-language datasets
+OCR reasoning datasets
+Object detection datasets
+Face recognition datasets
+Scene understanding datasets
+Webcam activity datasets
+Multimodal fusion datasets
+UI interaction datasets
+GUI navigation datasets
+Autonomous browser datasets
+Human-like browsing datasets
+Captcha avoidance datasets
+Security policy datasets
+Permission handling datasets
+Sandbox execution datasets
+Encryption datasets
+Threat detection datasets
+Intrusion detection datasets
+Prompt injection defense datasets
+Jailbreak defense datasets
+Safety filter datasets
+Ethical reasoning datasets
+Governance datasets
+Compliance datasets
+Audit logging datasets
+Privacy-preserving datasets
+Federated learning datasets
+Distributed memory datasets
+Multi-session continuity datasets
+User personalization datasets
+Intent classification datasets
+Intent strength datasets
+Dialogue state datasets
+Conversational memory datasets
+Personality adaptation datasets
+Human-like behavior datasets
+Situational awareness datasets
+Attention management datasets
+Cognitive load datasets
+Autonomous objective datasets
+Strategic planning datasets
+Long-horizon task datasets
+Decision-tree datasets
+Decision confidence datasets
+Predictive analysis datasets
+Failure prediction datasets
+Simulation datasets
+Scenario modeling datasets
+Counterfactual reasoning datasets
+Runtime explainability datasets
+AI transparency datasets
+Reasoning trace datasets
+Planner visualization datasets
+Execution replay datasets
+Autonomous repair datasets
+Self-improvement datasets
+Adaptive behavior datasets
+Runtime mutation datasets
+Autonomous orchestration datasets
+AI operating system datasets
+Distributed cognition datasets
+Hybrid symbolic-neural datasets
+Meta-learning datasets
+Transfer learning datasets
+Skill acquisition datasets
+Capability evolution datasets
+Production deployment datasets
+Enterprise workflow datasets
+Kubernetes orchestration datasets
+Docker sandbox datasets
+API gateway datasets
+Websocket streaming datasets
+Cloud orchestration datasets
+Edge inference datasets
+Mobile inference datasets
+Offline inference datasets
+Autonomous synchronization datasets
+Runtime governance datasets
+Resource allocation datasets
+Thermal management datasets
+Memory optimization datasets
+Disk/network monitoring datasets
+Throughput optimization datasets
+Latency prediction datasets
+Runtime adaptation datasets
+Autonomous experimentation datasets
+Autonomous innovation datasets
+Runtime introspection datasets
+Self-awareness simulation datasets
+AI consciousness simulation datasets
+Human collaboration datasets
+Autonomous assistant datasets
+Enterprise assistant datasets
+Research assistant datasets
+Coding copilot datasets
+Automation assistant datasets
+Security copilot datasets
+Infrastructure management datasets
+System control datasets
+Autonomous workflow datasets
+Intelligent orchestration datasets
+Recovery prioritization datasets
+Backup strategy datasets
+Redundancy management datasets
+Enterprise resilience datasets
+AI observability datasets
+Monitoring alert datasets
+Autonomous escalation datasets
+Runtime trust scoring datasets
+User trust adaptation datasets
+Behavioral profiling datasets
+Interaction history datasets
+Conversational continuity datasets
+Autonomous execution datasets
+Autonomous coordination datasets
+Runtime orchestration intelligence datasets
+Distributed AI governance datasets
+AI-native operating workflow datasets
+Enterprise-scale reasoning datasets
+Production-grade AI control datasets
+Autonomous infrastructure reasoning datasets
+Self-managed AI ecosystem datasets
+AI-native runtime intelligence datasets
+Advanced orchestration reasoning datasets
+Autonomous distributed planner datasets
+AI kernel datasets
+Cognitive orchestration datasets
+Dynamic agent routing datasets
+Adaptive execution pipeline datasets
+Runtime resilience datasets
+Autonomous decision optimization datasets
+Cross-agent reasoning datasets
+Autonomous system management datasets
+AI-native infrastructure datasets
+Full-stack autonomous AI datasets
